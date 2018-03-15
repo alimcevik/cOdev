@@ -60,8 +60,8 @@ int obeb(int a, int b){
 		return b;
 	else if(b==0)
 		return a;
-
-	if (a == b)
+  
+  if (a == b)
 		return a;
 
 	if(a > b)
