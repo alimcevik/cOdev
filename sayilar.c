@@ -18,7 +18,7 @@ int asalmi(int z){
 	for (int i = 2; i < z; i++){
 		if(z % i == 0){
 			kontrol++;
-	//FIX ME Her şey yolunda mı?
+	//FIX ME Her şey yolunda mı? 
 	//printf("kontrol=%d i=%d z=%d \n",kontrol, i,z);
 		}
 	}
