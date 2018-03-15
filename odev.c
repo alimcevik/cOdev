@@ -25,7 +25,3 @@ void main(){
 	printf("Okek(1,67)= %d\n", okek(1,67));
 	printf("Okek(2,12)= %d\n", okek(2,12));
 }
-
-
-// gcc -std=c99 odev.c sayilar.c -o dosyaAdi
-// dosyaAdi
