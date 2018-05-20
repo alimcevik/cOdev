@@ -2,7 +2,6 @@
 #include <stdbool.h>
 #include <Math.h>
 
-//Permutation Sort Fonksiyonlari
 void diziOlustur(int *dizi, int n){
   for(int i=0; i<n; i++){
     printf("%d.elemani girin: ",i+1);
@@ -20,7 +19,7 @@ void diziYazdir(int *dizi, int n){
 bool siralimi(int *dizi, int n){
   for(int i=n-1; i >= 1;i--){
     if(dizi[i] < dizi[i-1]){
-      return false;
+      return false;  
     }
   }
   return true;
@@ -44,17 +43,17 @@ void bogosort(int *dizi, int n){
 }
 
 int main(){
-	int sayilar, adet, boyut;
-	printf("Permutation Sort\n");
-		  printf("----Dizinin boyutunu girin: ");
-		  scanf("%d",&boyut);
-		  //FIXME -5 tane sayı olamaz, mantık hatası
-		  int boyut_mutlak = fabs(boyut);
-			int *dizi = (int*)malloc(sizeof(int) * boyut_mutlak);
-
-			diziOlustur(dizi, boyut_mutlak);
-		  bogosort(dizi, boyut_mutlak);
-			printf("\n>> Siralanmis Hali: ");
-			diziYazdir(dizi, boyut_mutlak);
-		
+  int sayilar, adet, boyut;
+  printf("Permutation Sort\n");
+  printf("----Dizinin boyutunu girin: ");
+  scanf("%d",&boyut);
+  
+  //FIXME -5 tane sayı olamaz mantık hatası
+  int boyut_mutlak = fabs(boyut);
+  int *dizi = (int*)malloc(sizeof(int) * boyut_mutlak);
+  
+  diziOlustur(dizi, boyut_mutlak);
+  bogosort(dizi, boyut_mutlak);
+  printf("\n>> Siralanmis Hali: ");
+  diziYazdir(dizi, boyut_mutlak);		
 }
