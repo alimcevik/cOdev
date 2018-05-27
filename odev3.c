@@ -110,6 +110,6 @@ int main(){
 	printf("Sonuc: \n");
 
 	matrisYazdir(mDiziSonuc);
-	 
+
 	return 0;
 }
