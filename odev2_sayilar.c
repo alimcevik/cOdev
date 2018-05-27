@@ -46,46 +46,46 @@ int enbuyukrakam(int y){
 
 
 int obeb(int a, int b){
-	if (a < 0 || b < 0 )
-		return -1;
-	if(a==0)
-		return b;
-	else if(b==0)
-		return a;
+  if (a < 0 || b < 0 )
+    return -1;
+  if(a==0)
+    return b;
+  else if(b==0)
+    return a;
 
-	if (a == b)
-		return a;
+  if (a == b)
+    return a;
 
-	if(a > b)
-		return obeb(a-b,b);
-	else
-		return obeb(a,b-a);
+  if(a > b)
+    return obeb(a-b,b);
+  else
+    return obeb(a,b-a);
 }
 
 
 int okek(int a, int b){
-	//obeb(a,b) * okek(a,b) = a*b
-	return (a * b) / obeb(a,b);
+  //obeb(a,b) * okek(a,b) = a*b
+  return (a * b) / obeb(a,b);
 }
+
 void main(){
-	tekcift(5);
-	tekcift(120);
-	printf("-----\n");
+  tekcift(5);
+  tekcift(120);
+  printf("-----\n");
 
-	asalmi(5);
-	asalmi(120);
-	printf("-----\n");
+  asalmi(5);
+  asalmi(120);
+  printf("-----\n");
 	
-	enbuyukrakam(980);
-	enbuyukrakam(163);
-	printf("-----\n");
+  enbuyukrakam(980);
+  enbuyukrakam(163);
+  printf("-----\n");
 
-	printf("Obeb(12,24)= %d\n", obeb(12,24));
-	printf("Obeb(1,67)= %d\n", obeb(1,67));
-	printf("Obeb(0,12)= %d\n-----\n", obeb(0,12));
+  printf("Obeb(12,24)= %d\n", obeb(12,24));
+  printf("Obeb(1,67)= %d\n", obeb(1,67));
+  printf("Obeb(0,12)= %d\n-----\n", obeb(0,12));
 
-	printf("Okek(12,24)= %d\n", okek(12,24));
-	printf("Okek(1,67)= %d\n", okek(1,67));
-	printf("Okek(2,12)= %d\n", okek(2,12));
+  printf("Okek(12,24)= %d\n", okek(12,24));
+  printf("Okek(1,67)= %d\n", okek(1,67));
+  printf("Okek(2,12)= %d\n", okek(2,12));
 }
-
