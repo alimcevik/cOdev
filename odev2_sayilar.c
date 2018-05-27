@@ -75,7 +75,7 @@ void main(){
 	asalmi(5);
 	asalmi(120);
 	printf("-----\n");
-
+	
 	enbuyukrakam(980);
 	enbuyukrakam(163);
 	printf("-----\n");
