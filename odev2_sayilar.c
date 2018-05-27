@@ -1,47 +1,47 @@
 #include <stdio.h>
 
 int tekcift(int x){
-	if(x%2==1){
-		printf("%d Sayisi tektir\n", x);
-		return 1;
-	}		
-	else{
-		printf("%d sayisi cifttir\n", x);
-		return 0;
-	}
+  if(x % 2 == 1){
+    printf("%d Sayisi tektir\n", x);
+    return 1;
+  }		
+  else {
+    printf("%d sayisi cifttir\n", x);
+    return 0;
+  }
 }
 
 
 int asalmi(int z){
-	int kontrol = 0;
-	for (int i = 2; i <= z/2; i++){
-		if(z % i==0){
-			kontrol++;
-		}
-	}
-	if(kontrol <= 1){
-		printf("%d sayisi asaldir\n", z);	
-	return 1;
-	}
-	else
-		printf("%d sayisi asal degildir\n", z);
-	return 0;
+  int kontrol = 0;
+  for (int i = 2; i <= z/2; i++){
+    if(z % i==0){
+      kontrol++;
+    }
+  }
+  if(kontrol <= 1){
+    printf("%d sayisi asaldir\n", z);	
+    return 1;
+  }
+  else
+    printf("%d sayisi asal degildir\n", z);
+    return 0;
 }
 
 
 int enbuyukrakam(int y){
-	int enbuyuk = 0; 
-	printf("%d sayisinin en buyuk rakami=",y);
- 	while (y > 0){
-		int kalan = y % 10;
-		y /= 10;
-		if(kalan > enbuyuk){
-			enbuyuk = kalan;
-		}
+  int enbuyuk = 0; 
+  printf("%d sayisinin en buyuk rakami=",y);
+  while (y > 0){
+    int kalan = y % 10;
+    y /= 10;
+    if(kalan > enbuyuk){
+      enbuyuk = kalan;
+    }
 	//	FIXME else gerek yok 
 	//	enbuyuk = enbuyuk; olarak geri donuyor
-	}
-	printf("%d\n", enbuyuk);	
+  }
+  printf("%d\n", enbuyuk);	
 }
 
 
